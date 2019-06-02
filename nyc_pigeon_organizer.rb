@@ -11,6 +11,7 @@ def nyc_pigeon_organizer(data)
       # key is property value
       
       names.each do |name|
+        
         if pigeon_list.has_key?(name) == false
            pigeon_list[name] = {}
         end
