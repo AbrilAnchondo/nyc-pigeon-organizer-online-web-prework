@@ -8,7 +8,7 @@ def nyc_pigeon_organizer(data)
     
     info.each do |key, names|
       
-      
+      # key is property value
       
       names.each do |name|
         if pigeon_list.has_key?(name) == false
