@@ -1,16 +1,23 @@
 def nyc_pigeon_organizer(data)
   # write your code here!
   pigeon_list = {}
+  
   data.each do |property, info|
+    
+    # properties are color, gender and lives
+    
     info.each do |key, names|
+      
+      
+      
       names.each do |name|
         if pigeon_list.has_key?(name) == false
            pigeon_list[name] = {}
         end
         
-        if pigeon_list.has_key?(property) == false
+      #  if pigeon_list.has_key?(property) == false
            pigeon_list[name][property] = []
-        end
+       # end
         
         if pigeon_list[name][property].include?(key) == false 
            key = key.to_s
@@ -23,3 +30,5 @@ def nyc_pigeon_organizer(data)
   #puts pigeon_list
   pigeon_list
 end
+
+pigeon_data[:color][:purple]
