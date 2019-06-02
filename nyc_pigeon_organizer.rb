@@ -16,9 +16,9 @@ def nyc_pigeon_organizer(data)
            pigeon_list[name] = {}
         end
         
-      #  if pigeon_list.has_key?(property) == false
+        if pigeon_list.has_key?(property) == false
            pigeon_list[name][property] = []
-       # end
+        end
         
         if pigeon_list[name][property].include?(key) == false 
            key = key.to_s
