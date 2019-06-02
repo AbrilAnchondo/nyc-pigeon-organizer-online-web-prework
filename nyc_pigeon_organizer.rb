@@ -16,7 +16,7 @@ def nyc_pigeon_organizer(data)
            pigeon_list[name] = {}
         end
         
-        if pigeon_list.has_key?(property) == false
+        if pigeon_list[name].has_key?(property) == false
            pigeon_list[name][property] = []
         end
         
@@ -32,4 +32,3 @@ def nyc_pigeon_organizer(data)
   pigeon_list
 end
 
-pigeon_data[:color][:purple]
